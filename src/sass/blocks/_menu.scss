@@ -1,0 +1,100 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 272px minmax(875px, auto) 384px;
+    background: #f8f8f8;
+}
+
+.menu {
+    background: #FFFFFF;
+    left: 0;
+    display: grid;
+    grid-template-rows: minmax(48px, auto) minmax(48px, auto) minmax(357px, auto) minmax(274px, auto);
+    row-gap: 40px;
+    text-align: center;
+    justify-content: center;
+    &__logo {
+      padding: 44px 74px 0 67px;
+    }
+    &__btn {
+        width: 192px;
+        height: 48px;
+        background: $main-color;
+        border-radius: 10px;
+        margin: 3px 44px 0px 36px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__box {
+        margin-left: 70px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-rows: repeat(6, minmax(20px, auto));
+        grid-template-columns: 142px;
+        row-gap: 50px;
+        &_link {
+            display: flex;
+            text-align: center;
+            justify-content: start;
+            left: 70px;
+            &-descr {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #8DA1B5;
+                padding-left: 25px;
+                cursor: pointer;
+                transition: all .4s;
+                &:hover {
+                    color: #272829;
+    
+                }
+            }
+        }
+    }
+    &__container {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(192px, auto);
+        grid-template-rows: minmax(99px, auto) minmax(55px, auto) minmax(100px, auto);
+        background: #F5F5FB;
+        border-radius: 12px;
+        justify-content: center;
+        margin: 80px 44px 88px 36px;
+        &-book {
+            margin: -42px 52px 0 55px;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #778DAD;
+            margin-top: -10px;
+        }
+        &-btn {
+            width: 144px;
+            height: 48px;
+            background: $main-color;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            border: none;
+            margin: 20px 24px 24px 24px;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
